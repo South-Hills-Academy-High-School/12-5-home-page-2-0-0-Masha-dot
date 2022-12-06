@@ -6,12 +6,14 @@ const server = http.createServer((req, res) => {
   var url = req.url;
   if(url ==='/') {
     fs.createReadStream('index.html').pipe(res)
-  } else if(url ==='/arizonz.htm1')  {
-    fs.createReadStream('arizonz.htm1').pipe(res)
-  } else if (url==='/dinosaur.hem1') {
-    fs.createReadStream('dinosaur.htm1').pipe(res)
+  } else if(url ==='/arizona.html')  {
+    fs.createReadStream('arizona.html').pipe(res)
+  } else if (url ==='/dinosaur.html') {
+    fs.createReadStream('dinosaur.html').pipe(res)
+  } else if (url ==='/ending.html') {
+fs.createReadStream('ending.html').pipe(res)
   } else {
-     res.write('Doesn\'t exist'); 
+    res.write('Doesn\'t exist'); 
     res.end(); 
   }
   console.log("connected")
