@@ -1,0 +1,20 @@
+<html>
+      <h1>The dinosaur asks you a Third question</h1>
+      <p>what day is today</p>
+      <p><input type="text" id="answer" valur="type answer here"></p>
+      <p><button onclick="checkAnswer()">Check Answer</button></p>
+
+      <script>
+            function checkAnswer() {
+                var answer = document.getElementById("answer").value
+                if (answer==="1") {
+                    alert("correct answer")
+                    window.location.href="/dinosaur4.html"
+                }else {
+                    alert("WRONG! GO BACK TO SCHOOL")
+                    window.location.href="/dinosaureat.html"
+                }
+    }
+        </script>    
+      </html>
+function checkAnswer() {

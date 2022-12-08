@@ -1,0 +1,21 @@
+<html>
+      <h1>The dinosaur asks you a Fifth question</h1>
+      <p>is Kenso looks like a monkey</p>
+      <p><input type="text" id="answer" valur="type answer here"></p>
+      <p><button onclick="checkAnswer()">Check Answer</button></p>
+  
+
+      <script>
+            function checkAnswer() {
+                var answer = document.getElementById("answer").value
+                if (answer==="No") {
+                    alert("correct answer")
+                    window.location.href="/ending.html"
+                }else {
+                    alert("WRONG! GO BACK TO SCHOOL")
+                    window.location.href="/dinosaureat.html"
+                }
+    }
+        </script>    
+      </html>
+function checkAnswer() {

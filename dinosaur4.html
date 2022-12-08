@@ -1,0 +1,21 @@
+<html>
+      <h1>The dinosaur asks you a Fourth question</h1>
+      <p>what is your name</p>
+      <p><input type="text" id="answer" valur="type answer here"></p>
+      <p><button onclick="checkAnswer()">Check Answer</button></p>
+     
+
+      <script>
+            function checkAnswer() {
+                var answer = document.getElementById("answer").value
+                if (answer==="John") {
+                    alert("correct answer")
+                    window.location.href="/dinosaur5.html"
+                }else {
+                    alert("WRONG! GO BACK TO SCHOOL")
+                    window.location.href="/dinosaureat.html"
+                }
+    }
+        </script>    
+      </html>
+function checkAnswer() {

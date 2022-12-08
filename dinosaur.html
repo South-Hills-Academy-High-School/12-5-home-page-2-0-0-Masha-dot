@@ -1,0 +1,21 @@
+<html>
+    <img src="https://i.natgeofe.com/k/c9d2cffc-2152-404a-b540-1cc48bbcd3f2/spinosaurid-dino-news_4x3.jpg" height="auto" width="400">
+    <h2>the dinosaur asks you a question:</h2>
+    <p>what is the first color of the rainbow?</p>
+    <p><input type="text" id="answer" valur="type answer here"></p>
+    <p><button onclick="checkAnswer()">Check Answer</button></p>
+    
+    <script>
+        function checkAnswer() {
+            var answer = document.getElementById("answer").value
+            if (answer==="red") {
+                alert("correct answer")
+                window.location.href="/dinosaur2.html"
+            }else {
+                alert("WRONG! GO BACK TO SCHOOL")
+                window.location.href="/dinosaureat.html"
+            }
+}
+    </script>    
+</html>
+ 

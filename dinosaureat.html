@@ -1,0 +1,21 @@
+<html>
+      <h1>The dinosaur asks you a eats question</h1>
+      <p>Does tim look a lot like a sizzling bear?</p>
+      <p><input type="text" id="answer" valur="type answer here"></p>
+      <p><button onclick="checkAnswer()">Check Answer</button></p>
+   
+
+      <script>
+            function checkAnswer() {
+                var answer = document.getElementById("answer").value
+                if (answer==="no") {
+                    alert("correct answer")
+                    window.location.href="/.html"
+                }else {
+                    alert("WRONG! GO BACK TO SCHOOL")
+                    window.location.href="/dinosaureat.html"
+                }
+    }
+        </script>    
+      </html>
+function checkAnswer() {
